@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: rgb(76, 232, 180);
+  border: solid;
+  border-radius: 2em;
+}
+
+.boton {
+  margin: 1em 0.3em;
+  display: inline-block;
+  background: rgb(73, 28, 235);
+  line-height: 3em;
+  height: 3em;
+  padding: 0 1.5em;
+  color: #f6e1e1;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 2em;
+}
+
+.boton:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.boton:active {
+  transform: scale(.95);
+}
+

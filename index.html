@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice Completo de Ejercicios - Desarrollo Web</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #005b5c, #008b8b);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .grid-carpetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .seccion-carpeta {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-top: 5px solid #008b8b;
+    }
+
+    .seccion-carpeta h2 {
+      font-size: 20px;
+      color: #004d4d;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eef2f5;
+    }
+
+    .lista-archivos {
+      list-style: none;
+    }
+
+    .lista-archivos li {
+      margin-bottom: 15px;
+    }
+
+    .lista-archivos a {
+      display: block;
+      text-decoration: none;
+      color: #444;
+      background: #f8fafc;
+      padding: 12px 15px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .lista-archivos a:hover {
+      background: #e6f4f4;
+      border-color: #008b8b;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(0,139,139,0.15);
+    }
+
+    .badge-file {
+      font-family: monospace;
+      font-size: 13px;
+      background: #e1f5f5;
+      color: #006666;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .descripcion {
+      display: block;
+      font-size: 13px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #d2dbe3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Panel General de Contenidos</h1>
+      <p>Índice dinámico para la navegación de laboratorios HTML5 y CSS3</p>
+    </header>
+
+    <main class="grid-carpetas">
+
+      <!-- BLOQUE 1: CASOS DE MAQUETACIÓN -->
+      <section class="seccion-carpeta">
+        <h2>📁 Bloque: Casos de Estudio (Maquetación)</h2>
+        <ul class="lista-archivos">
+          <li>
+            <a href="caso01.html">
+              <span class="badge-file">caso01.html</span>
+              <span class="descripcion">Diseñar un botón realista. Estructura base con tres botones de suscripción y enlace a stilo.css.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso02.html">
+              <span class="badge-file">caso02.html</span>
+              <span class="descripcion">Diseñar un botón realista V2. Agrega contenedor de acciones y textos enfatizados en negrita.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso03.html">
+              <span class="badge-file">caso03.html</span>
+              <span class="descripcion">Ejercicio navbar. Estructuración de barra de navegación básica utilizando listas no ordenadas.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso04.html">
+              <span class="badge-file">caso04.html</span>
+              <span class="descripcion">Menú NAV horizontal. Barra de navegación web estilizada con menús inline-flex y transiciones de color.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso05.html">
+              <span class="badge-file">caso05.html</span>
+              <span class="descripcion">Tabla de precios. Tabla comercial destacada con esquinas redondeadas, separaciones y estados de check/cross.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso06.html">
+              <span class="badge-file">caso06.html</span>
+              <span class="descripcion">Tres contenedores CSS. Ejercicios de desbordamiento, text-shadow (rojo, azul, verde) y alineación justificada.</span>
+            </a>
+          </li>
+          <li>
+            <a href="caso07.html">
+              <span class="badge-file">caso07.html</span>
+              <span class="descripcion">Fuente Lato - @font-face. Implementación y llamado de fuentes externas de Google Fonts con diferentes grosores.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BLOQUE 2: EJEMPLOS DE INTERACTIVIDAD -->
+      <section class="seccion-carpeta">
+        <h2>📁 Bloque: Ejemplos (Pseudoclases)</h2>
+        <ul class="lista-archivos">
+          <li>
+            <a href="ejemplo01.html">
+              <span class="badge-file">ejemplo01.html</span>
+              <span class="descripcion">Evento hover V1. Aplicación básica de color de fondo amarillo al pasar el mouse por los enlaces institucionales.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo02.html">
+              <span class="badge-file">ejemplo02.html</span>
+              <span class="descripcion">Evento hover V2. Comportamiento dinámico expandido a etiquetas h1 (rojo), párrafos (celeste) y enlaces.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo03.html">
+              <span class="badge-file">ejemplo03.html</span>
+              <span class="descripcion">Pseudoclases de Enlace. Demostración práctica del orden de estados: link, visited, hover y active.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo04.html">
+              <span class="badge-file">ejemplo04.html</span>
+              <span class="descripcion">Variaciones de Hover. Clases independientes con efectos de escala, fuentes monoespaciadas y subrayados.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo05.html">
+              <span class="badge-file">ejemplo05.html</span>
+              <span class="descripcion">Selector Combinador (+). Muestra un cuadro div (display: block) de manera automática al hacer hover en un span.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo06.html">
+              <span class="badge-file">ejemplo06.html</span>
+              <span class="descripcion">Menú Dropdown Interactiva. Maquetación avanzada de menús desplegables mediante selectores descendientes en cascada.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo07.html">
+              <span class="badge-file">ejemplo07.html</span>
+              <span class="descripcion">Demostración de :active V1. Evento activo que cambia el color de fondo a amarillo al clickear enlaces del IESTP.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo08.html">
+              <span class="badge-file">ejemplo08.html</span>
+              <span class="descripcion">Botón Activo. Comportamiento en botones de envío cambiando a fondo rosa al momento exacto del click.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo09.html">
+              <span class="badge-file">ejemplo09.html</span>
+              <span class="descripcion">Active en Bloques. Aplicación simultánea de la pseudoclase :active sobre encabezados, párrafos y enlaces favoritos.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo10.html">
+              <span class="badge-file">ejemplo10.html</span>
+              <span class="descripcion">Ciclo de Enlaces Replicado. Segunda instancia del orden secuencial correcto para el diseño interactivo de links.</span>
+            </a>
+          </li>
+          <li>
+            <a href="ejemplo11.html">
+              <span class="badge-file">ejemplo11.html</span>
+              <span class="descripcion">Variaciones de Diseño en Links. Colección complementaria de efectos decorativos y tipográficos interactivos.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BLOQUE 3: PÁGINAS DE EFECTOS VISUALES -->
+      <section class="seccion-carpeta">
+        <h2>📁 Bloque: Páginas (Bordes y Sombras)</h2>
+        <ul class="lista-archivos">
+          <li>
+            <a href="pagina01.html">
+              <span class="badge-file">pagina01.html</span>
+              <span class="descripcion">Múltiples Recuadros CSS3. Muestra de border-radius mixto, sombras externas, sombras internas (inset) y opacidad.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina02.html">
+              <span class="badge-file">pagina02.html</span>
+              <span class="descripcion">Border-radius independiente. Uso de la sintaxis de cuatro parámetros en sentido horario para redondear vértices.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina03.html">
+              <span class="badge-file">pagina03.html</span>
+              <span class="descripcion">Border-radius por esquina. Definición explícita e independiente de la suavidad de bordes mediante subpropiedades.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina04.html">
+              <span class="badge-file">pagina04.html</span>
+              <span class="descripcion">Box-shadow Desplazamientos. Estudio de sombras proyectadas con coordenadas horizontales y verticales (eje X e Y).</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina05.html">
+              <span class="badge-file">pagina05.html</span>
+              <span class="descripcion">Box-shadow Inset. Implementación técnica para proyectar la sombra en el área interna de cajas o contenedores.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina06.html">
+              <span class="badge-file">pagina06.html</span>
+              <span class="descripcion">Box-shadow Doble. Renderizado simultáneo de sombras internas y externas separadas por coma en un único elemento.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina07.html">
+              <span class="badge-file">pagina07.html</span>
+              <span class="descripcion">Box-shadow RGBA. Creación de sombras suaves controlando la transparencia a través del canal alfa del color.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina08.html">
+              <span class="badge-file">pagina08.html</span>
+              <span class="descripcion">Text-shadow Avanzado. Creación de efectos de relieve y efectos cromáticos 3D mediante múltiples capas de sombra de texto.</span>
+            </a>
+          </li>
+          <li>
+            <a href="pagina09.html">
+              <span class="badge-file">pagina09.html</span>
+              <span class="descripcion">Tipografía Google Fonts. Integración e importación directa de la fuente de texto 'Open Sans' en páginas web.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Índice General Automático &bull; Todos los datos de las muestras han sido preservados con éxito.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

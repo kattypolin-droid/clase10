@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tres contenedores CSS</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Estilos comunes a los tres divs */
+    #div1, #div2, #div3 {
+      margin: 18px;
+      padding: 8px;
+      width: 240px;
+      height: 300px;
+      border: 3px solid blue;
+    }
+
+    /* DIV 1: overflow ellipsis, line-height 1.05, sombra roja */
+    #div1 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;   /* necesario para ellipsis en bloque simple */
+      line-height: 1.05;
+    }
+    /* Para texto multilinea con ellipsis usamos display -webkit-box */
+    #div1 p {
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      line-height: 1.05;
+    }
+    #div1 span {
+      font-size: 18px;
+      text-shadow: 3px 3px 0px red;
+    }
+
+    /* DIV 2: overflow hidden sin puntos, line-height 1.10, sombra azul izquierda-abajo */
+    #div2 {
+      overflow: hidden;
+      line-height: 1.10;
+    }
+    #div2 p {
+      line-height: 1.10;
+    }
+    #div2 span {
+      font-size: 18px;
+      text-shadow: -3px 3px 0px blue;
+    }
+
+    /* DIV 3: texto justificado, color #8B4513, line-height 1.20, sombra verde difuminada */
+    #div3 {
+      overflow: hidden;
+      text-align: justify;
+      color: #8B4513;
+      line-height: 1.20;
+    }
+    #div3 p {
+      line-height: 1.20;
+    }
+    #div3 span {
+      font-size: 18px;
+      text-shadow: 0px 0px 12px rgba(0, 200, 0, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="div1">
+    <p>
+      <span>Lorem ipsum dolor</span> sit amet, consectetuer adipiscing elit.
+      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+      quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+      consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+      vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+      vitae, justo. Nullam dictum felis eu pede mollis pretium.
+    </p>
+  </div>
+
+  <div id="div2">
+    <p>
+      <span>Nullam dictum felis</span> eu pede mollis pretium. Integer tincidunt.
+      Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+      tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+      enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+      Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+      imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+      ultricies nisi. Nam eget dui. Etiam rhoncus.
+    </p>
+  </div>
+
+  <div id="div3">
+    <p>
+      <span>Maecenas tempus</span> tellus eget condimentum rhoncus, sem quam
+      semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+      blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et
+      ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+      Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+      leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+      Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú NAV horizontal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    nav {
+      display: inline-flex;
+      border: 2px solid #009999;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    nav a {
+      display: block;
+      padding: 14px 22px;
+      background-color: #00BBBB;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1px;
+      border-right: 1px solid #009999;
+      transition: background-color 0.2s;
+    }
+
+    nav a:last-child {
+      border-right: none;
+    }
+
+    nav a:hover {
+      background-color: #007777;
+    }
+
+    nav a:active {
+      background-color: #005555;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-bottom:20px;">Barra de navegación web</h2>
+  <nav>
+    <a href="#">INICIO</a>
+    <a href="#">NOSOTROS</a>
+    <a href="#">SERVICIOS</a>
+    <a href="#">RECURSOS</a>
+    <a href="#">CONTÁCTENOS</a>
+  </nav>
+  <p style="margin-top:10px; font-style:italic; font-size:13px;">Fig. 2.14 Barra de navegación web</p>
+</body>
+</html>

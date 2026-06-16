@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuente Lato - @font-face</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      background: #fafafa;
+      color: #333;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin: 1em 0 0.4em;
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    .light  { font-weight: 300; }
+    .normal { font-weight: 400; }
+    .bold   { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>Fuente Lato aplicada con @font-face</h1>
+  <p class="light">Este texto usa Lato Light (300) — ligero y elegante para textos largos.</p>
+  <p class="normal">Este texto usa Lato Regular (400) — el peso estándar para lectura cómoda.</p>
+  <p class="bold">Este texto usa Lato Bold (700) — ideal para títulos y resaltar información.</p>
+
+  <h2>¿Por qué usar fuentes personalizadas?</h2>
+  <p>Con la regla <strong>@font-face</strong> (o @import desde Google Fonts) podemos cargar cualquier
+  tipografía directamente desde la web sin que el usuario necesite tenerla instalada en su equipo.
+  Esto permite mantener la identidad visual de un sitio de forma consistente en todos los dispositivos.</p>
+</body>
+</html>

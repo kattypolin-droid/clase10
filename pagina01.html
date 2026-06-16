@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo - border-radius</title>
+
+    <style>
+        body {
+            background: rgb(244, 238, 238);
+            margin: 50px;
+        }
+
+        #recuadro1 {
+            background-color: #e88b8b;
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: -10px -5px 10px rgb(8, 101, 214);
+        }
+
+        #recuadro2 {
+            background-color: #ed5dce;
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 20px 40px 50px 30px;
+            box-shadow: 10px 4px 10px rgba(233, 5, 5, 0.8);
+        }
+
+        #recuadro3 {
+            background-color: #a165ea;
+            color: rgb(6, 5, 64);
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 30px;
+
+            box-shadow: 10px 6px 5px rgba(240, 212, 86, 0.8) inset;
+        }
+
+        #recuadro4 {
+            background-color: #42edd3;
+            width: 200px;
+            padding: 10px;
+            margin-top: 20px;
+
+            border-radius: 20px 40px 50px 30px;
+            box-shadow: 0px 0px 50px rgba(243, 2, 159, 0.8);
+        }
+
+        .titulo {
+            color: azure;
+            text-shadow: 5px 10px 5px #8f0d6f;
+        }
+
+        .titulo2 {
+            color: rgb(76, 0, 255);
+            text-shadow:
+                3px 3px 5px #2be6e3,
+                6px 6px 5px rgb(229, 71, 94),
+                9px 9px 5px rgb(74, 243, 48);
+        }
+        .titulo:hover{
+          color: rgb(18, 111, 130);
+          font-size: 32px;
+          text-shadow:10px  8px  10p rgba(120, 100, 10, 0.8);
+
+        }
+        #recuadro2:hover{
+          opacity: 0.5;
+        }
+        
+    </style>
+</head>
+<body>
+
+   
+    <div id="recuadro1">
+        <h3 class="titulo">Recuadro 1</h3>
+        <p>Podemos indicar un único valor que se asignará a los cuatro vértices.</p>
+    </div>
+
+    <div id="recuadro2">
+        <h3 class="titulo2">Recuadro 2</h3>
+        <p>Podemos indicar cuatro valores diferentes para cada vértice.</p>
+    </div>
+
+    <div id="recuadro3">
+        <h3>Recuadro 3</h3>
+        <p>También podemos usar distintos radios para cada esquina.</p>
+    </div>
+
+    <div id="recuadro4">
+        <h3>Recuadro 4</h3>
+        <p>Podemos aplicar una sombra difuminada alrededor del recuadro.</p>
+    </div>
+
+</body>
+</html>
